@@ -2,13 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
 
 /* Estilos generales */
-body {
-    font-family: 'Londrina Solid', sans-serif;
-    background-color: #ffffff; /* Fondo blanco */
-    color: #ffffff; /* Texto blanco */
-    margin: 0;
-    padding: 0;
-}
+
 
 .container {
     width: 90%; /* Utilizamos un porcentaje más alto para adaptar el contenedor a distintos tamaños de pantalla */
@@ -28,6 +22,14 @@ body {
     background-size: 40%; /* Tamaño del fondo ajustado */
     height: 300px; /* Altura del encabezado ajustada */
 }
+
+
+body {
+    margin: 0; /* Quita el margen predeterminado del cuerpo */
+    padding: 0; /* Quita el padding predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Establece la familia de fuentes predeterminada */
+}
+
 
 
 
@@ -86,37 +88,31 @@ div {
 
 /* Estilos para el contenedor de los botones */
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan a una nueva línea si no hay suficiente espacio */
+    justify-content: center; /* Centra los botones horizontalmente */
+    padding: 20px; /* Añade un espacio de relleno alrededor del contenedor */
 }
 
 /* Estilos para los botones */
 .button {
-    display: inline-block;
-    margin:  100px;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
-    transition: transform 0.3s ease;
+    margin: 10px; /* Añade un margen entre los botones */
+    text-decoration: none; /* Quita la decoración de subrayado predeterminada para los enlaces */
 }
 
-/* Estilos para las imágenes dentro de los botones */
 .button img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+    max-width: 200px; /* Establece el ancho máximo de las imágenes */
+    height: auto; /* Hace que las imágenes mantengan su relación de aspecto */
+    display: block; /* Hace que las imágenes sean elementos de bloque */
 }
 
-/* Efecto de sombra al pasar el mouse sobre los botones */
-.button:hover {
-    transform: translateY(-10px); /* Levantar ligeramente el botón */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .button img {
+        max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor en dispositivos móviles */
+    }
 }
 
-/* Efecto de clic en los botones */
-.button:active {
-    transform: translateY(1px); /* Hacer que el botón se hunda ligeramente */
-    box-shadow: none; /* Eliminar la sombra durante el clic */
-}
+
+       
