@@ -1,0 +1,122 @@
+/* Importar la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Londrina Solid', sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Utilizamos un porcentaje más alto para adaptar el contenedor a distintos tamaños de pantalla */
+    max-width: 1200px; /* Limitamos el ancho máximo del contenedor para pantallas muy grandes */
+    margin: 0 auto;
+}
+
+/* Encabezado */
+.header {
+    background-color: #f80909; /* Fondo rojo */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/logo\ club\ almacen\ blanco\ sin\ fondo.png); /* Corregida la ruta de la imagen */
+    background-repeat: no-repeat;
+    background-position: center; /* Corregida la posición del fondo */
+    background-size: 40%; /* Tamaño del fondo ajustado */
+    height: 300px; /* Altura del encabezado ajustada */
+}
+
+
+
+.btn-a:hover {
+    background-color: #ffffff; /* Fondo rojo */
+    color: #ffffff; /* Texto blanco */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Media queries para dispositivos móviles */
+
+
+    .menu .logo {
+        font-size: 1.5em;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5em;
+    }
+
+    .banner-text p {
+        font-size: 1.2em;
+    }
+
+    .btn-a {
+        padding: 0.8em 1.5em;
+    }
+
+
+element.style {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+    border-radius: 20px;
+
+.template-section {
+    background-color: #ffffff;
+    border-radius: 42px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    box-sizing: border-box;
+}
+hoja de estilo de user-agent
+div {
+    display: block;
+}
+
+
+/* Estilos para el contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Estilos para los botones */
+.button {
+    display: inline-block;
+    margin:  100px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.button img {
+    width: 100%;
+    height: auto;
+}
+
+/* Efecto de sombra al pasar el mouse sobre los botones */
+.button:hover {
+    transform: translateY(-10px); /* Levantar ligeramente el botón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+/* Efecto de clic en los botones */
+.button:active {
+    transform: translateY(1px); /* Hacer que el botón se hunda ligeramente */
+    box-shadow: none; /* Eliminar la sombra durante el clic */
+}
